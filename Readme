@@ -1,0 +1,26 @@
+### Created By - Mohanish ###
+
+Requirement :
+1) Python greater than 2.7 version
+2) Linux server
+
+Configure:
+# We have to configure several lines and value as per the requirment.
+1) Mail config
+    s = smtplib.SMTP('hostaddress') #mail configure server
+    Email_Body = "Body Tittle"
+    fromaddr = "From Tittle"
+    toaddr = "abc@mail.com,xyz@mail.com "  ##mulitple email address can be used but sepreated by comma
+    msg['Subject'] = "Subject Tittle"
+    filename = 'filename.xlsx'
+2) Connection details
+    myUsername = "hostname"
+    myPassword = "password"
+
+# Format of Sample file which we provide it as input file
+
+Server_Detail Sheet: there are two column please fill the details
+File_Details : file path contain remaining address of path
+                file name of the file
+                if you have expected date otherwise its optional
+Result: full details will be plot over here.
