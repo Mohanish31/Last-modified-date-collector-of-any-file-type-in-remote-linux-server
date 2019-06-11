@@ -84,8 +84,9 @@ def Connect(servers, fullPathlist,filePathCountExcel,profileCountExcel):
     Last_modifiedList = []
     for i in range(profileCountExcel * filePathCountExcel):
         myHostname = servers[i]
-        myUsername = "qa_wasadmin"
-        myPassword = "Welcome1"
+	# changes the host and password
+        myUsername = "hostname"   
+        myPassword = "password"
         with pysftp.Connection(host=myHostname, username=myUsername, password=myPassword) as sftp:
             try: 
                 print("Successfully connected with :",myHostname )
